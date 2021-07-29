@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Soal 1</string>
+    <string name="app_name">Soal 1 Hello World</string>
     <string name="masukan_angka_disini">Masukan Angka Disini</string>
     <string name="confirm">Confirm</string>
     <string name="output">OUTPUT</string>
