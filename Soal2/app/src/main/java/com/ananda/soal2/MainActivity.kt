@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private fun emailCheck() {
         binding.confirmBtn.setOnClickListener{
             val email = binding.input.text.toString()
-            if(email != null || email != ""){
+            if(true){
                 val regexID = Regex("""[a-zA-Z0-9\.\_\-]{0,20}""" +
                         """\@""" +
                         """[a-zA-Z0-9][a-zA-Z0-9\-]{0,64}""" +
@@ -35,16 +35,17 @@ class MainActivity : AppCompatActivity() {
                 }
                 else if(regexCOID.matches(email)){
                     println("email : "+email+" = "+regexCOID.matches(email))
-                    binding.outputText.text = "email : "+email+" = "+regexCOID.matches(email)
+                    binding.outputText.text = "email : "+email+"\n"+regexCOID.matches(email)
+                }
+                else if(email == "" || email == " "){
+                    binding.outputText.text = "Anda belum mengisi input email"
                 }
                 else {
                     println("Email Salah")
                     binding.outputText.text = "Email Salah"
                 }
             }
-            else{
-                binding.outputText.text = ""
-            }
+
         }
     }
 }
