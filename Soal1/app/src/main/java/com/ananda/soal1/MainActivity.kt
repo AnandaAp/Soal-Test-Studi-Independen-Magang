@@ -20,26 +20,26 @@ class MainActivity : AppCompatActivity() {
                 process(input)
             }
             else{
-                binding.outputText.setText("Masukan Input Terlebih Dahulu")
+                binding.outputText.text = "Masukan Input Terlebih Dahulu"
             }
         }
     }
 
     private fun process(input: Int) {
         if((input % 3 == 0) && (input % 5 != 0)){
-            binding.outputText.setText("Hello")
+            binding.outputText.text = "Hello"
         }
         else if((input % 3 != 0) && (input % 5 == 0)){
-            binding.outputText.setText("World")
+            binding.outputText.text = "World"
         }
         else if((input % 3 == 0) && (input % 5 == 0)){
-            binding.outputText.setText("Hello World")
+            binding.outputText.text = "Hello World"
         }
         else if(input % 3 == 1){
-            binding.outputText.setText("")
+            binding.outputText.text = ""
         }
         else if (input % 5 == 1){
-            binding.outputText.setText("")
+            binding.outputText.text = ""
         }
     }
 }
