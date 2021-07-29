@@ -16,10 +16,13 @@ class MainActivity : AppCompatActivity() {
     private fun revereseProcess() {
         binding.confirmBtn.setOnClickListener{
             val case = binding.input.text.toString()
-            if(case != "" || case != " "){
+            if(case.isNotBlank() && case != " "){
                 val reverse = case.reversed()
                 binding.output.text = reverse
                 println(reverse)
+            }
+            else{
+                binding.output.text = "Masukan Input Terlebih Dahulu"
             }
         }
     }
