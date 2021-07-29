@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ananda.soalteststudiindependenmagang.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_soal1"
+            app:destination="@id/soal1" />
+        <action
+            android:id="@+id/action_mainFragment_to_soal2"
+            app:destination="@id/soal2" />
+        <action
+            android:id="@+id/action_mainFragment_to_soal3"
+            app:destination="@id/soal3" />
+        <action
+            android:id="@+id/action_mainFragment_to_soal4"
+            app:destination="@id/soal4" />
+        <action
+            android:id="@+id/action_mainFragment_to_soal5"
+            app:destination="@id/soal5" />
+    </fragment>
+    <fragment
+        android:id="@+id/soal1"
+        android:name="com.ananda.soalteststudiindependenmagang.Soal1"
+        android:label="fragment_soal1"
+        tools:layout="@layout/fragment_soal1" />
+    <fragment
+        android:id="@+id/soal2"
+        android:name="com.ananda.soalteststudiindependenmagang.Soal2"
+        android:label="fragment_soal2"
+        tools:layout="@layout/fragment_soal2" />
+    <fragment
+        android:id="@+id/soal3"
+        android:name="com.ananda.soalteststudiindependenmagang.Soal3"
+        android:label="fragment_soal3"
+        tools:layout="@layout/fragment_soal3" />
+    <fragment
+        android:id="@+id/soal4"
+        android:name="com.ananda.soalteststudiindependenmagang.Soal4"
+        android:label="fragment_soal4"
+        tools:layout="@layout/fragment_soal4" />
+    <fragment
+        android:id="@+id/soal5"
+        android:name="com.ananda.soalteststudiindependenmagang.Soal5"
+        android:label="fragment_soal5"
+        tools:layout="@layout/fragment_soal5" />
+</navigation>
