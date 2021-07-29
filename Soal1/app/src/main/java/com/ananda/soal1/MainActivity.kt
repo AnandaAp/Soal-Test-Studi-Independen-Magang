@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
                 process(input)
             }
             else{
-                binding.outputText.setText("")
+                binding.outputText.setText("Masukan Input Terlebih Dahulu")
             }
         }
     }
